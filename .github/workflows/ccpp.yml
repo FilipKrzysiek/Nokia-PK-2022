@@ -13,10 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
     - name: Install Qt
       uses: jurplel/install-qt-action@v2
+      
     - name: cmake
       run: cmake .
+      
     - name: make all targets
       run: make all
 
